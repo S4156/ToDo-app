@@ -8,17 +8,20 @@ from dotenv import load_dotenv
 from flask import Flask
 from flask_migrate import Migrate
 
+from flask_migrate import upgrade
 
 from extensions import db, login_manager
 from auth_routes import auth_bp
 from task_routes import task_bp
 from admin_tools import bp as admin_bp
+
 # from models import *
 
 load_dotenv()
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY") or os.urandom(24)
+
 
 # DB接続設定
 raw_db_url = os.environ.get("DATABASE_URL")
@@ -31,6 +34,10 @@ app.config["SQLALCHEMY_DATABASE_URI"] = db_url
 db.init_app(app)
 login_manager.init_app(app)
 migrate = Migrate(app, db)
+
+@app.before_first_request
+def initialize_database():
+    upgrade()
 
 # ルーティング登録
 app.register_blueprint(auth_bp)
