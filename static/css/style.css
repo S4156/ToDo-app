@@ -111,8 +111,19 @@ input[type="name"] {
   background-color: transparent;
 }
 
-.task-form {
-  text-align: center;
+.task-form-controls{
+  max-width: 400px;
+  margin: 32px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.task-form-controls input{
+  flex: 3;
+}
+.task-form-controls button{
+  flex: 1;
 }
 
 /*----------------------
