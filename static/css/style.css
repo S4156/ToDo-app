@@ -103,7 +103,7 @@ header > p {
 /*----------------------
   Text Input Form Style
 ----------------------*/
-input[type="text"] {
+input[type="name"] {
   margin: 16px;
   padding: 4px;
   border-radius: 5px;
