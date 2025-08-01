@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 from flask import Flask
 from flask_migrate import Migrate
 
-from flask_migrate import upgrade
 
 from extensions import db, login_manager
 from auth_routes import auth_bp
@@ -43,7 +42,3 @@ app.register_blueprint(admin_bp)
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-if __name__ != "__main__":
-    with app.app_context():
-        db.create_all()
