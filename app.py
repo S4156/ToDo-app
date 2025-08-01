@@ -35,9 +35,6 @@ db.init_app(app)
 login_manager.init_app(app)
 migrate = Migrate(app, db)
 
-@app.before_first_request
-def initialize_database():
-    upgrade()
 
 # ルーティング登録
 app.register_blueprint(auth_bp)
@@ -46,3 +43,7 @@ app.register_blueprint(admin_bp)
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+if __name__ != "__main__":
+    with app.app_context():
+        upgrade()
