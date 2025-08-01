@@ -103,27 +103,28 @@ header > p {
 /*----------------------
   Text Input Form Style
 ----------------------*/
-input[type="name"] {
-  margin: 16px;
-  padding: 4px;
-  border-radius: 5px;
-  border: solid 2px #776a69;
-  background-color: transparent;
-}
 
 .task-form-controls{
-  max-width: 400px;
+  width: 100%;
+  max-width: 300px;
   margin: 32px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
+  box-sizing: border-box
 }
 
 .task-form-controls input{
   flex: 3;
+  min-width: 0;
+  border-radius: 5px;
+  border: solid 2px #776a69;
+  background-color: transparent;
+  box-sizing: border-box
 }
 .task-form-controls button{
   flex: 1;
+  flex-shrink: 0;
 }
 
 /*----------------------
