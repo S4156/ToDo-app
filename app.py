@@ -46,4 +46,4 @@ if __name__ == "__main__":
 
 if __name__ != "__main__":
     with app.app_context():
-        upgrade()
+        db.create_all()
