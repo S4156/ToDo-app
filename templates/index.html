@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block link %}{% endblock %}
+
+{% block title %}ToDoリスト{% endblock %}
+
+{% block content %}
+<!-- ▼ ユーザー情報とログアウト -->
+<div id="User-info">
+  {% if current_user.is_authenticated %}
+    <p>こんにちは、{{ current_user.username }} さん！</p>
+  {% endif %}
+  <div class="logout-block">
+    <a href="/logout">
+      <button class="Submit-button">ログアウト</button>
+    </a>
+  </div>
+</div>
+
+<!-- ▼ ToDoリスト全体ラッパー -->
+<div class="wrapper-white Paper">
+    
+    <!-- ▼ ヘッダー -->
+    <header class="app-header text-center">
+      <h1>To Do List</h1>
+      <p>- ご褒美付きやることリスト -</p>
+    </header>
+    <!-- ▲ ヘッダー -->
+      
+      <!-- ▼ タスク追加フォーム -->
+      <form method="POST" enctype="multipart/form-data" class="task-form">
+        <input type="text" name="content" placeholder="タスクを入力">
+        <button type="submit" class="Submit-button">追加</button>
+      </form>
+
+      <!-- ▼ ご褒美動画カテゴリ選択と視聴ページへボタン -->
+      <div id="reward-button-area">
+        <form method="POST" action="/reward" class="reward-form">
+          <label for="category">ご褒美カテゴリを選ぶ：</label>
+          <div class="reward-controls">
+            <select name="category" id="category">
+              {% for cat in categories %}
+                <option value="{{ cat }}">{{ cat }}</option>
+              {% endfor %}
+            </select>
+            <button type="submit" class="Submit-button">
+              🎁 ご褒美動画を見る
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ▼ タスクリスト表示 -->
+      <div class="container text-center">
+        <div class="row">
+
+          <!-- ▼ 未完了タスク -->
+          <div class="col-md-6">
+            <h2>未完了</h2>
+            <ul id="incomplete-list">
+              {% for task in incomplete_tasks %}
+                <li>
+                  <input type="checkbox" class="toggle-checkbox" data-id="{{ task.id }}" id="check-{{ task.id }}">
+                  <label for="check-{{ task.id }}" data-content="{{ task.content }}" id="content-{{ task.id }}">
+                    {{ task.content }}
+                  </label>
+                  <button class="round_btn delete-task" data-id="{{ task.id }}"></button>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <!-- ▲ 未完了タスク -->
+          
+          <!-- ▼ 完了タスク -->
+          <div class="col-md-6">
+            <h2>完了</h2>
+            <ul id="complete-list">
+              {% for task in complete_tasks %}
+                <li>
+                  <input type="checkbox" class="toggle-checkbox" data-id="{{ task.id }}" id="check-{{ task.id }}" checked>
+                  <label for="check-{{ task.id }}" data-content="{{ task.content }}" id="content-{{ task.id }}">
+                    {{ task.content }}
+                  </label>
+                  <button class="round_btn delete-task" data-id="{{ task.id }}"></button>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <!-- ▲ 完了タスク -->
+        </div>
+      </div>
+      <!-- ▲ タスクリスト表示 -->
+      
+</div>
+<!-- ▲ ToDoリスト全体ラッパー -->
+
+<!-- ▼ JavaScript -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+{% endblock %}

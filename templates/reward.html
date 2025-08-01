@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}ToDoリスト{% endblock %}
+
+{% block content %}
+<!-- ▼ ご褒美動画表示メッセージ -->
+<h1 class="text-center mt-4">
+  お疲れさま！<br>ご褒美動画はこちら
+</h1>
+
+<!-- ▼ YouTubeプレイヤー用コンテナ -->
+<div class="video-container mt-4">
+  <div id="player"></div>
+</div>
+
+<!-- ▼ JavaScript: 動画IDのテンプレート変数をJSに渡す -->
+<script>
+  window.videoIdFromTemplate = "{{ video.youtube_id }}";
+</script>
+
+<!-- ▼ JavaScriptの読み込み -->
+<script src="{{ url_for('static', filename='js/reward.js') }}"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+{% endblock %}
