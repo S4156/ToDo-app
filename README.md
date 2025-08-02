@@ -26,10 +26,18 @@ https://todo-app-862v.onrender.com
 - 楽しみを伴うタスク管理によって、努力の習慣化がストレスなく実現できるようになる。
 
 ## 🛠️使用技術
-- Python (Flask)
-- SQLAlchemy / Flask-Migrate（DB管理）
-- SQLite / PostgreSQL（Renderデプロイ用）
+###　バッグエンド
+- Python
+- Flask
+### フロントエンド
 - Jinja2（テンプレート）
 - JavaScript（動画プレイヤー制御など）
 - HTML / CSS（レスポンシブ設計）
+- Bootstrap5
+### 外部API
 - YouTube Data API v3
+### データベース
+- PostgreSQL
+
+###　ORM
+- SQLAlchemy
