@@ -26,18 +26,21 @@ https://todo-app-862v.onrender.com
 - 楽しみを伴うタスク管理によって、努力の習慣化がストレスなく実現できるようになる。
 
 ## 🛠️使用技術
-###　バッグエンド
+### バッグエンド
 - Python
-- Flask
+- Flask (軽量なWebフレームワーク)
+- SQLAlchemy (ORM)
 ### フロントエンド
-- Jinja2（テンプレート）
-- JavaScript（動画プレイヤー制御など）
-- HTML / CSS（レスポンシブ設計）
-- Bootstrap5
+- HTML/CSS/JavaScript
+- Jinja2 (Flask用テンプレートエンジン)
+- Bootstrap5 (レスポンシブ対応UIライブラリ)
 ### 外部API
-- YouTube Data API v3
+- YouTube Data API v3 (動画検索に使用)
 ### データベース
 - PostgreSQL
-
-###　ORM
-- SQLAlchemy
+### コード解析
+- ESLint (JavaScriptのコード品質チェック)
+- Pylint (Pythonのコード品質チェック)
+- pytest (テストツール)
+### デプロイ先
+- Render
