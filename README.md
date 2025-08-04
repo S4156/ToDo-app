@@ -25,7 +25,7 @@ https://todo-app-862v.onrender.com
 - タスク完了時に短時間の楽しみを用意することで、次の行動にスムーズに移れるようになる。
 - 楽しみを伴うタスク管理によって、努力の習慣化がストレスなく実現できるようになる。
 
-### 機能一覧
+## 🐈機能一覧
 | ログイン・新規登録 | タスク管理機能 |
 |---|---|
 |<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/21f75c60-f333-42ca-b7d2-43764bccb6ab" />|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/a2bef016-3ff8-4a2b-94fd-a4c77d546789" />|
