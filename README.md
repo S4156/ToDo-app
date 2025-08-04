@@ -26,8 +26,21 @@ https://todo-app-862v.onrender.com
 - 楽しみを伴うタスク管理によって、努力の習慣化がストレスなく実現できるようになる。
 
 ### 機能一覧
-|ログイン|Todoリスト|
+| ログイン・新規登録 | タスク管理機能 |
 |---|---|
+|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/21f75c60-f333-42ca-b7d2-43764bccb6ab" />|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/a2bef016-3ff8-4a2b-94fd-a4c77d546789" />|
+| ログインIDとパスワードでの認証機能を実装しました。 | タスクを管理できる機能を実装しました。追加、削除、並び替えができます。 |
+
+| 動画へのリンク表示 | 動画のカテゴリ選択 |
+|---|---|
+|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/dfe06f2b-64be-4b19-b2c7-b23ef185c5ef" />|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/2799e695-dae0-4bc4-8a07-774ce53629ba" />|
+| タスク完了時、動画へのリンクが出てきます。 | 観たい動画のカテゴリを選択できます。 |
+
+| 動画へのリンク表示 | 管理画面 |
+|---|---|
+|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/60700dea-a34c-4a6e-89ab-bdf010f4b15e" />|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/972563c1-23ad-4958-8ab9-7410e07a8861" />|
+| 選ばれたカテゴリから動画をランダムで表示します。 | 管理者権限を持つユーザーが動画を管理できる機能を実装しました。 |
+
 
 ## 🛠️使用技術
 ### バッグエンド
