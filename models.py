@@ -41,7 +41,7 @@ class User(UserMixin, db.Model):
 
 class Task(db.Model):
     """
-    登録されたToDoタスクの情報を保持するモデル
+    登録されたタスクの情報を保持するモデル
 
     Attributes
         id (int): タスクID,(主キー)
