@@ -6,7 +6,7 @@
 ## 🌐アプリURL
 https://todo-app-862v.onrender.com
 
-## 📋このアプリについて
+## 📔このアプリについて
 ### アプリを作った背景
 学習や開発に取り組む中で、作業の合間についSNSや動画アプリを長時間見てしまうことがありました。
 ちょっとした休憩のつもりが、気づけばかなりの時間が経っている・・・。
@@ -41,7 +41,6 @@ https://todo-app-862v.onrender.com
 |<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/60700dea-a34c-4a6e-89ab-bdf010f4b15e" />|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/972563c1-23ad-4958-8ab9-7410e07a8861" />|
 | 選ばれたカテゴリから動画をランダムで表示します。 | 管理者権限を持つユーザーが動画を管理できる機能を実装しました。 |
 
-
 ## 🛠️使用技術
 ### バッグエンド
 - Python
@@ -61,3 +60,8 @@ https://todo-app-862v.onrender.com
 - pytest (テストツール)
 ### デプロイ先
 - Render
+
+## 📋ER図
+<p align="center">
+<img width="860" height="550" alt="Image" src="https://github.com/user-attachments/assets/10a3bd42-5274-4f24-a371-92b9e6be0215" />
+</p>
