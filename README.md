@@ -2,9 +2,12 @@
 ユーザーがタスクを管理し、達成後にYouTube動画をご褒美として視聴できる習慣化支援アプリです。
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/86795003-0a19-4223-af6a-df884b801131" />
+<br><br><br>
 
 ## 🌐アプリURL
+ユーザー名とパスワードの登録のみでお使いいただけます。<br><br>
 https://todo-app-862v.onrender.com
+<br><br><br>
 
 ## 📔このアプリについて
 ### アプリを作った背景
@@ -12,18 +15,22 @@ https://todo-app-862v.onrender.com
 ちょっとした休憩のつもりが、気づけばかなりの時間が経っている・・・。
 そんな経験が多くの人にもあるのではないかと思います。
 そこで、休憩時に癒しやちょっとした刺激が得られて、なおかつ気分をすばやく切り替えられる仕組みがあったら、だらだらと休憩せずに済むのでは？と考え、このアプリを開発しました。
+<br><br>
 
 ### ユーザーが抱える課題
 - 休憩中、ついSNSや動画アプリに没頭してしまう。
 - タスクをやりきるためのモチベーションが湧かない。
 - 作業を終えた後の癒しが欲しい。
+<br><br>
 
 ### 解決方法
 タスク管理ができ、タスク達成後に短い動画を一つ見られるアプリケーション。
+<br><br>
 
 ### 望む未来
 - タスク完了時に短時間の楽しみを用意することで、次の行動にスムーズに移れるようになる。
 - 楽しみを伴うタスク管理によって、努力の習慣化がストレスなく実現できるようになる。
+<br><br><br>
 
 ## 🐈機能一覧
 | ログイン・新規登録 | タスク管理機能 |
@@ -40,6 +47,8 @@ https://todo-app-862v.onrender.com
 |---|---|
 |<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/60700dea-a34c-4a6e-89ab-bdf010f4b15e" />|<img width="906" height="906" alt="Image" src="https://github.com/user-attachments/assets/972563c1-23ad-4958-8ab9-7410e07a8861" />|
 | 選ばれたカテゴリから動画をランダムで表示します。 | 管理者権限を持つユーザーが動画を管理できる機能を実装しました。 |
+
+<br><br>
 
 ## 🛠️使用技術
 ### バッグエンド
@@ -60,11 +69,12 @@ https://todo-app-862v.onrender.com
 - pytest (テストツール)
 ### デプロイ先
 - Render
+<br><br><br>
 
 ## 📋ER図
 <p align="center">
 <img width="860" height="550" alt="Image" src="https://github.com/user-attachments/assets/10a3bd42-5274-4f24-a371-92b9e6be0215" />
-
+<br><br><br>
 
 ## 📄DFD
 <p align="center">
