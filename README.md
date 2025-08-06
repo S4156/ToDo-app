@@ -55,22 +55,27 @@ https://todo-app-862v.onrender.com
 - Python
 - Flask (軽量なWebフレームワーク)
 - SQLAlchemy (ORM)
+
 ### フロントエンド
 - HTML/CSS/JavaScript
 - Jinja2 (Flask用テンプレートエンジン)
 - Bootstrap5 (レスポンシブ対応UIライブラリ)
+
 ### 外部API
 - YouTube Data API v3 (動画検索に使用)
+
 ### データベース
 - PostgreSQL
+
 ### コード解析
 - ESLint (JavaScriptのコード品質チェック)
 - Pylint (Pythonのコード品質チェック)
 - pytest (テストツール)
+
 ### デプロイ先
 - Render
-<br><br><br>
 
+<br><br><br>
 ## 📋ER図
 <p align="center">
 <img width="860" height="550" alt="Image" src="https://github.com/user-attachments/assets/10a3bd42-5274-4f24-a371-92b9e6be0215" />
@@ -82,3 +87,22 @@ https://todo-app-862v.onrender.com
     <img width="611" height="552" alt="Image" src="https://github.com/user-attachments/assets/54b22bdf-2d85-491b-91b4-978c3ba4552d" />
   </a>
 </p>
+<br><br><br>
+
+## 工夫した点
+### 技術面の工夫
+- DB操作にSQLAlchemy(ORM)を活用。
+  - 冗長なSQLを排除し、保守性の高いDB操作を可能にした。
+- Ajaxを利用して非同期処理を実現。
+  - ページリロードなしでタスク操作を即時反映し、操作感を向上させた。
+- YouTube Data API v3の活用。
+  - 管理者がキーワード検索で動画をまとめて登録でき、運用効率を高めた。
+
+### UI/UX面の工夫
+- 色やフォントを統一し、温かみのあるデザインを採用。
+  - アナログ手帳のような親しみやすさにし、使いたくなるようなデザインを目指した。
+- フォームやボタンの配置を最適化
+  - スマホでも片手で操作しやすいレスポンシブデザインを実現した。
+- タスク達成時にアニメーションを追加
+  - 達成感を演出し、モチベーションの向上を促進。
+
