@@ -9,7 +9,7 @@
 https://todo-app-862v.onrender.com
 <br><br><br>
 
-<div style="page-break-before:always"></div>
+<div style="page-break-after: always;"></div>
 
 ## 📔このアプリについて
 ### アプリを作った背景
