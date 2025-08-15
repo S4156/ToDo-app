@@ -9,9 +9,7 @@
 https://todo-app-862v.onrender.com
 <br><br><br>
 
-div[style*="page-break-after"] {
-    page-break-after: always !important;
-}
+<div class="page-break"></div>
 
 ## 📔このアプリについて
 ### アプリを作った背景
