@@ -8,7 +8,9 @@
 ユーザー名とパスワードの登録のみでお使いいただけます。<br><br>
 https://todo-app-862v.onrender.com
 <br><br><br>
+
 <div style="page-break-before:always"></div>
+
 ## 📔このアプリについて
 ### アプリを作った背景
 学習や開発に取り組む中で、作業の合間についSNSや動画アプリを長時間見てしまうことがありました。
