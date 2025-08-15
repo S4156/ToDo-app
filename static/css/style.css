@@ -127,6 +127,10 @@ header > p {
   flex-shrink: 0;
 }
 
+input.error {
+  background-color: #ffeaea;
+}
+
 /*----------------------
   Button style
 ----------------------*/

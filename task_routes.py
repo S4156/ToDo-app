@@ -10,7 +10,7 @@ ToDoアプリケーションにおけるタスク関連のルーティング処�
 
 from datetime import datetime
 
-from flask import Blueprint, render_template, request, redirect, jsonify
+from flask import Blueprint, render_template, request, jsonify
 from flask_login import login_required,current_user
 import pytz
 
@@ -35,32 +35,35 @@ def index():
     """
     user_id = current_user.id
     if request.method == 'POST':
-        content = request.form.get("content")
+        data=request.get_json()
+        content=data.get("value")
         if content:
             task = Task(content=content, user_id=user_id)
             db.session.add(task)
             db.session.commit()
-        return redirect("/")
-    categories = db.session.query(RewardVideo.category).distinct().all()
-    categories = [c[0] for c in categories if c[0]]
-    incomplete_tasks = (
-        Task.query
-        .filter_by(user_id=user_id, completed=False)
-        .order_by(Task.sort_order.asc())
-        .all()
-    )
-    complete_tasks = (
-        Task.query
-        .filter_by(user_id=user_id, completed=True)
-        .order_by(Task.created_at.desc())
-        .all()
-    )
-    return render_template(
-        "index.html",
-        incomplete_tasks=incomplete_tasks,
-        complete_tasks=complete_tasks,
-        categories=categories
-    )
+            return jsonify({"success" : True,"id" : task.id})
+        return jsonify(success=False)
+    if request.method == 'GET':
+        categories = db.session.query(RewardVideo.category).distinct().all()
+        categories = [c[0] for c in categories if c[0]]
+        incomplete_tasks = (
+            Task.query
+            .filter_by(user_id=user_id, completed=False)
+            .order_by(Task.sort_order.asc())
+            .all()
+        )
+        complete_tasks = (
+            Task.query
+            .filter_by(user_id=user_id, completed=True)
+            .order_by(Task.created_at.desc())
+            .all()
+        )
+        return render_template(
+            "index.html",
+            incomplete_tasks=incomplete_tasks,
+            complete_tasks=complete_tasks,
+            categories=categories
+        )
 
 @task_bp.route("/delete/<int:task_id>", methods=["DELETE"])
 @login_required

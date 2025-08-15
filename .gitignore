@@ -3,3 +3,4 @@ eslint.config.mjs
 package-lock.json
 package.json
 install-pyenv-win.ps1
+jest.config.js
