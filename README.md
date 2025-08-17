@@ -12,9 +12,6 @@
 https://todo-app-862v.onrender.com
 <br><br><br>
 
-<div style="break-before:always"></div>
-<br><br><br>
-
 ## 📔このアプリについて
 ### アプリを作った背景
 学習や開発に取り組む中で、作業の合間についSNSや動画アプリを長時間見てしまうことがありました。
@@ -69,8 +66,6 @@ https://todo-app-862v.onrender.com
 
 ### 外部API
 - YouTube Data API v3 (動画検索に使用)
-
-<br><br>
 
 ### データベース
 - PostgreSQL
