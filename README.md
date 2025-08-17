@@ -70,6 +70,8 @@ https://todo-app-862v.onrender.com
 ### 外部API
 - YouTube Data API v3 (動画検索に使用)
 
+<br><br>
+
 ### データベース
 - PostgreSQL
 
