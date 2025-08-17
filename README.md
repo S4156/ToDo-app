@@ -76,6 +76,7 @@ https://todo-app-862v.onrender.com
 - ESLint (JavaScriptのコード品質チェック)
 - Pylint (Pythonのコード品質チェック)
 - pytest (テストツール)
+- Jest (テストツール)
 
 ### デプロイ先
 - Render
