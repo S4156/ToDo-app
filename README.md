@@ -7,7 +7,7 @@
 ## 🌐アプリURL
 ユーザー名とパスワードを登録するだけで、すぐにお使いいただけます。
 <br>
-※ 無料版の PaaS を利用しているため、サービスがスリープ状態になっていることがあります。
+※ 無料版のPaaSを利用しているため、サービスがスリープ状態になっていることがあります。
 その場合はアクセス後に自動的に起動しますので、しばらくお待ちください。<br><br>
 https://todo-app-862v.onrender.com
 <br><br><br>
@@ -69,7 +69,7 @@ https://todo-app-862v.onrender.com
 ### 外部API
 - YouTube Data API v3 (動画検索に使用)
 
-<br><br><br>
+<br><br>
 
 ### データベース
 - PostgreSQL
@@ -77,8 +77,9 @@ https://todo-app-862v.onrender.com
 ### コード解析
 - ESLint (JavaScriptのコード品質チェック)
 - Pylint (Pythonのコード品質チェック)
-- pytest (テストツール)
-- Jest (テストツール)
+- Jest (JavaScriptのテストフレームワーク)
+- pytest (Pythonのテストフレームワーク)
+
 
 ### デプロイ先
 - Render
